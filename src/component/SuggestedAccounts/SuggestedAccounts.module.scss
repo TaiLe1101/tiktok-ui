@@ -1,0 +1,27 @@
+.wrapper {
+}
+
+.account-item {
+  display: flex;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.item-info {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.username {
+  font-size: 1.6rem;
+  color: #161623;
+}
+
+.name {
+  font-size: 1.2rem;
+}
