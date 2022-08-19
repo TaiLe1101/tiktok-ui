@@ -13,6 +13,8 @@ function SuggestedAccounts({ label }) {
       <AccountItem />
       <AccountItem />
       <AccountItem />
+
+      <span className={cx('more-btn')}>See all</span>
     </div>
   );
 }
