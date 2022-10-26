@@ -106,12 +106,7 @@ function Header() {
         <div className={cx('action')}>
           {currentUser ? (
             <>
-              <Button
-                rounded
-                className={cx('outline')}
-                leftIcon={<FontAwesomeIcon icon={faPlus} />}
-                to="/upload"
-              >
+              <Button rounded className={cx('outline')} leftIcon={<FontAwesomeIcon icon={faPlus} />} to="/upload">
                 Upload
               </Button>
               <Tippy delay={[0, 200]} content="Message video">
@@ -127,21 +122,14 @@ function Header() {
             </>
           ) : (
             <>
-              <Button
-                rounded
-                className={cx('outline')}
-                leftIcon={<FontAwesomeIcon icon={faPlus} />}
-              >
+              <Button rounded className={cx('outline')} leftIcon={<FontAwesomeIcon icon={faPlus} />}>
                 Upload
               </Button>
               <Button primary>Log in</Button>
             </>
           )}
 
-          <Menu
-            items={currentUser ? userMenu : MENU_ITEMS}
-            onChange={handleMenuChange}
-          >
+          <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
             {currentUser ? (
               <Image
                 src="https://scontent.fsgn13-2.fna.fbcdn.net/v/t1.18169-9/13096282_115586658847599_318640396520884246_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=YtOngG3xjtQAX-QVRLN&tn=QZPNSKVadYcP5F0A&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT_vajPAVeRCj1wPvSb-sQVh4U_l-oslAxuLwcVp5L8xqA&oe=630DC3E9"
